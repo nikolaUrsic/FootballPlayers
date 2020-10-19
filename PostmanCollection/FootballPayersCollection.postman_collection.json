@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "492b645b-d396-4cf2-b7d4-d9975c6af52d",
+		"name": "FootballPayersCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetFootballPlayer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/footballPlayers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"footballPlayers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllFootballPlayers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/footballPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"footballPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateFootballPlayer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 1005,\n    \"FirstName\": \"Promjena\",\n    \"LastName\": \"Promjenic\",\n    \"Age\": 23,\n    \"FieldPosition\": \"Napadač\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/footballPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"footballPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateFootballPlayer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\":\"Nikola\",\n\t\"LastName\":\"Ursic\",\n\t\"Age\":23,\n\t\"FieldPosition\":\"Vratar\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/footballPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"footballPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteFootballPlayer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/footballPlayers/1008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"footballPlayers",
+						"1008"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
